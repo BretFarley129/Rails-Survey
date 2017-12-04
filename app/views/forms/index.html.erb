@@ -1,0 +1,39 @@
+<h1>Index works</h1>
+<form action="/submit" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <table>
+        <tr>
+            <td>Your Name:</td>
+            <td><input type="text" name="user[name]"></td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>
+                <select name="user[location]">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Favorite language:</td>
+            <td>
+                <select name="user[language]">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Comment (optional):</td>
+            <td></td>
+        </tr>
+    </table>
+    <textarea name="user[comments]" ></textarea>
+    <br>
+    <input type="submit" value="submit">
+</form>

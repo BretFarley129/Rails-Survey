@@ -1,0 +1,23 @@
+<h1> Success</h1>
+<% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td><%=@user['name']%></td>
+    </tr>
+    <tr>
+        <td>location:</td>
+        <td><%=@user['location']%></td>
+    </tr>
+    <tr>
+        <td>language:</td>
+        <td><%=@user['language']%></td>
+    </tr>
+    <tr>
+        <td>comments:</td>
+        <td><%=@user['comments']%></td>
+    </tr>
+</table>
+<a href="/">Go Back</a>
